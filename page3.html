@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+	<div class="main" id="main">
+	<div class="linksection">
+	<b>
+	<a href="index.html">Home</a> | <a href="page2.html">Gallery</a> | <a href="page3.html">Javascript example</a> | <a href="page4.html">Styling</a>
+	</b>
+	</div>
+	<h1>Javascript!</h1>
+	<p>Here's a simple use of Javascript.  It involves a button that runs a Javascript function.</p>
+	<button onclick="jokeFunction()">PRESS ME!</button>
+	<p id="setuparea"></p>
+	<p id="punchlinearea"></p>
+	</div>
+
+	<script>
+	function jokeFunction(){
+		const setups = ["How does a computer get drunk?", "Why did the PowerPoint Presentation cross the road?", "Have you heard of that new band: 1023 Megabytes?", "What do computers like to eat?", "Why did Spider-Man buy a computer?", "I've just bought one of those new singing computers.", "Why is the computer keyboard working so hard?"];
+		const punchlines = ["It takes screenshots!", "To get to the other slide!", "They don't have a gig yet!", "Microchips!", "To create a WEBsite!", "It's a Dell!", "Because it has two shifts!"]
+		jokenumber = Math.floor(Math.random() * 7);
+		document.getElementById("setuparea").innerHTML = setups[jokenumber]
+		document.getElementById("punchlinearea").innerHTML = punchlines[jokenumber]
+		r = Math.floor(Math.random() * 255);
+		b = Math.floor(Math.random() * 255);
+		g = Math.floor(Math.random() * 255);
+		newcolour = "rgba("+r+","+g+","+b+",0.6)"
+		document.getElementById("main").style.background=newcolour;
+	}
+	</script>
+	
+	
+
+</body>
+
+</html>

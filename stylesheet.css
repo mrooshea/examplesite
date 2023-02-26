@@ -1,0 +1,17 @@
+body {
+	background-color: lightblue;
+}
+.main {
+	background-color: white;
+	border-style: double;
+	padding: 10px;
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	font-family:courier;
+}
+
+.bodytext{
+	text-align:left;
+}
+

@@ -1,0 +1,33 @@
+body {
+	background-color: #faf7a7;
+}
+.main {
+	background-color: white;
+	border-style: dashed;
+	padding: 10px;
+	width: 1000px;
+	margin: auto;
+	text-align: left;
+	font-family:Calibri;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: middle;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #eeeeee;
+}

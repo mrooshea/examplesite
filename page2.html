@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="gallery.css">
+	
+	<script>
+		function myFunction(imgs) {
+		  console.log("test")
+		  var expandImg = document.getElementById("expandedImg");
+		  var imgText = document.getElementById("imgtext");
+		  expandImg.src = imgs.src;
+		  imgText.innerHTML = imgs.alt;
+		  expandImg.parentElement.style.display = "block";
+		}
+	</script>
+	
+</head>
+
+<body>
+
+	<div class="main">
+	<div class="linksection">
+	<b>
+	<a href="index.html">Home</a> | <a href="page2.html">Gallery</a> | <a href="page3.html">Javascript example</a> | <a href="page4.html">Styling</a>
+	</b>
+	</div>
+	<h1>Gallery of Illusions</h1>
+	<br />
+	Here is an example of an image gallery where the images can be expanded by clicking on the images.  It uses Javascript and CSS to change the picture.
+	<br />
+	<br />
+	<a href="https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp">Here</a> is a W3Schools tutorial of how to make a gallery like this.
+	
+	<div id="gallery">
+	
+	
+	<div class="row">
+	  <div class="column">
+		<img src="oi1.PNG" alt="Illusion 1" onclick="myFunction(this);">
+	  </div>
+	  <div class="column">
+		<img src="oi2.PNG" alt="Illusion 2" onclick="myFunction(this);">
+	  </div>
+	  <div class="column">
+		<img src="oi3.PNG" alt="Illusion 3" onclick="myFunction(this);">
+	  </div>
+	  <div class="column">
+		<img src="oi4.PNG" alt="illusion 4" onclick="myFunction(this);">
+	  </div>
+	</div>
+
+	<!-- The expanding image container -->
+	<div class="container">
+	  <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
+	  <img id="expandedImg" style="width:100%">
+	  <div id="imgtext"></div>
+	</div>
+
+</div>
+	
+	</div>
+
+	
+	
+	
+	
+</body>
+
+</html>
